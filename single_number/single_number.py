@@ -4,8 +4,15 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
-
-    pass
+    result = []
+    for i in arr:
+        if i in result:
+            result.remove(i)
+        else:
+            result.append(i)
+    return result
+        
+    
 
 
 if __name__ == '__main__':
